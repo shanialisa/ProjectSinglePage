@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Kafe</title>
+  <style>
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: rgb(95, 27, 22);
+      line-height: 1.6;
+    }
+
+    /* Header (Nama Kafe) */
+    .header {
+      text-align: center;
+      padding: 5px;
+      border-top: 2px solid #eee;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 5px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      color: #f7f6e9;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border: 2px solid rgb(204, 204, 195);
+      padding: 10px 20px;
+      display: inline-block;
+    }
+
+    /* Split Screen Container */
+    .container {
+      display: flex;
+      height: calc(100vh - 200px); /* Kurangi tinggi untuk footer */
+    }
+
+    /* Menu Minuman (Kiri) */
+    .menu-minuman {
+      flex: 1;
+      padding: 20px;
+      background-color: rgb(117, 103, 103);
+      border-right: 1px solid #a09565;
+      overflow-y: auto;
+    }
+
+    /* Menu Makanan (Kanan) */
+    .menu-makanan {
+      flex: 1;
+      padding: 20px;
+      background-color: #eee;
+      overflow-y: auto;
+    }
+
+    /* Judul Menu makanan*/
+    .menu-title {
+      font-size: 1.8em;
+      font-family: serif;
+      color: #555;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      border-top: 1px dashed #ccc ;
+      text-align: center;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 20px;
+    }
+
+    /* Judul Menu minuman*/
+    .menu-titlemn {
+      font-size: 1.8em;
+      font-family: serif;
+      color: #eee;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      border-top: 1px dashed #ccc ;
+      text-align: center;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 20px;
+    }
+
+    /* Item Menu */
+    .menu-item {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-item h3 {
+      font-size: 1.2em;
+      color: #140101;
+      margin-bottom: 5px;
+    }
+
+    .menu-item p {
+      font-size: 1em;
+      color: #eee;
+      margin-bottom: 0;
+    }
+
+    .item-image {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+
+    .item-details {
+      flex-grow: 1;
+    }
+
+    .item-name {
+      font-size: 1.2em;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .item-description {
+      color: #eee;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+
+    .item-price {
+      font-weight: bold;
+      color: darkred;
+    }
+
+    /* Menu Grid */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+    }
+
+    /* Menu Grid Item */
+    .menu-grid-item {
+      background-color: rgb(219, 191, 191);
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+      display: flex;
+      align-items: center;
+    }
+
+    .menu-grid-item:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #333;
+      color: #f7f6e9;
+      margin-top: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header (Nama Kafe) -->
+<div style="text-align: center;">
+   <h2 style="font-family: 'Times New Roman', Times, serif; color: #eee;">
+  J A V A A<br> N O O K
+   </h2>
+  </div>
+  
+  <div class="header">
+   <h1>M E N U</h1>
+  </div>
+
+  <!-- Split Screen Container -->
+  <div class="container">
+    
+    <!-- Menu Minuman -->
+    <div class="menu-minuman">
+      <section class="menu-category">
+        <h2 class="menu-titlemn">COFFEE</h2>
+        <div class="menu-grid">
+          <div class="menu-grid-item">
+            <img src="longblack.jpeg" alt="longblack" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Long Black</h3>
+              <p class="item-description">kopi hitam pekat dengan rasa espresso.</p>
+              <span class="item-price">Rp 20.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="cappucino.jpeg" alt="cappucino" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Cappucino</h3>
+              <p class="item-description">Kopi espresso, susu panas, dan busa yang lembut.</p>
+              <span class="item-price">Rp 25.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="caramel.jpeg" alt="caramel" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Caramel Hazelnut Iced Coffee</h3>
+              <p class="item-description">Perpaduan manis caramel dan rasa kacang hazelnut yang kaya.</p>
+              <span class="item-price">Rp 27.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="brown sugar.jpeg" alt="brown sugar" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Brown sugar shaken espresso</h3>
+              <p class="item-description">Perpaduan espresso bold dan gula are manis.</p>
+              <span class="item-price">Rp 25.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="oatmilk.jpeg" alt="oatmilk" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">OatMilk Iced Coffee</h3>
+              <p class="item-description">Kopi dingin dengan sentuhan lembut susu gandum.</p>
+              <span class="item-price">Rp 25.000</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="menu-category">
+        <h2 class="menu-titlemn">NON-COFFEE</h2>
+        <div class="menu-grid">
+          <div class="menu-grid-item">
+            <img src="matcha.jpeg" alt="matcha" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Iced Matcha Latte</h3>
+              <p class="item-description">Perpaduan segar antara bubuk matcha premium dan susu creamy.</p>
+              <span class="item-price">Rp 25.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="chocolate.jpeg" alt="hot chocolate" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Hot chocolate</h3>
+              <p class="item-description">Terbuat dari Cokelat Berkualitas dan Susu yang Segar.</p>
+              <span class="item-price">Rp 18.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="thai tea.jpeg" alt="thaitea" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Thai Tea</h3>
+              <p class="item-description">Minuman Khas Thailand,terbuat dari Teh Hitam,
+                 Susu Kental Manis, dan Rempah-rempah Khas.</p>
+              <span class="item-price">Rp 15.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="lemon.jpeg" alt="lemon tea" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Lemon Tea</h3>
+              <p class="item-description">Perpaduan sempurna teh segar dan perasan lemon.</p>
+              <span class="item-price">Rp 15.000</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </div>
+
+    <!-- Menu Makanan -->
+    <div class="menu-makanan">
+      <section class="menu-category">
+        <h2 class="menu-title">FOOD</h2>
+        <div class="menu-grid">
+          <div class="menu-grid-item">
+            <img src="pizza.jpeg" alt="pizza" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Pizza</h3>
+              <p class="item-description">Roti yang renyah dengan saus tomat kaya rasa,
+                 ditaburi dengan keju leleh dan topping pilihan.</p>
+              <span class="item-price">Rp 80.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="spaghetti.jpeg" alt="spagehtti" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Spaghetti</h3>
+              <p class="item-description">Spaghetti al dente yang lezat, disiram dengan saus khas yang kaya rasa.</p>
+              <span class="item-price">Rp 50.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="sandwich.jpeg" alt="tuna sandwich" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Tuna Sandwich</h3>
+              <p class="item-description">Daging tuna segar dalam saus kaya, disajikan di atas roti lembut yang renyah.</p>
+              <span class="item-price">Rp 30.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="seafood.jpeg" alt="seafood" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Creamy Crab and Shrimp Seafood Bisque</h3>
+              <p class="item-description">Sup yang memadukan kelezatan daging kepiting segar dan udang,</p>
+              <span class="item-price">Rp 40.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="wings.jpeg" alt="Chicken wings" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Chicken Wings</h3>
+              <p class="item-description">Sayap ayam renyah dengan saus pilihan.</p>
+              <span class="item-price">Rp 50.000</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-category">
+        <h2 class="menu-title">DESSERT</h2>
+        <div class="menu-grid">
+          <div class="menu-grid-item">
+            <img src="chees.jpeg" alt="Cheesecake" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Cheesecake</h3>
+              <p class="item-description">Kue keju lembut dengan tekstur creamy, disajikan dengan topping buah segar atau krim yang manis.</p>
+              <span class="item-price">Rp 75.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="tiramisu.jpeg" alt="tiramisucake" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name"> Tiramisu Cake</h3>
+              <p class="item-description">Kelezatan klasik Italia dengan lapisan sponge lembut, mascarpone creamy, dan sentuhan espresso.</p>
+              <span class="item-price">Rp 60.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="donat.jpeg" alt="donat" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Chocolate Covered Donuts</h3>
+              <p class="item-description">Donat empuk yang dilapisi dengan coklat leleh.</p>
+              <span class="item-price">Rp 40.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="pudding.jpeg" alt="pudding" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Pudding Fla Chocolate</h3>
+              <p class="item-description">Puding coklat lembut dengan saus fla yang creamy.</p>
+              <span class="item-price">Rp 30.000</span>
+            </div>
+          </div>
+          <div class="menu-grid-item">
+            <img src="brownies.jpeg" alt="brownies" class="item-image">
+            <div class="item-details">
+              <h3 class="item-name">Fudgy Brownies</h3>
+              <p class="item-description">Kue cokelat lembut dan padat, dengan rasa manis yang khas.</p>
+              <span class="item-price">Rp 35.000</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>JAVAA NOOK | Padang | Buka Setiap Hari 09:00 - 23:00</p>
+  </div>
+
+</body>
+</html>

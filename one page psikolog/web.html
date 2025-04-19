@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psikolog - Konseling Online</title>
+    <style>
+        /* Gaya Dasar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: #4CAF50;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('gambar-psikolog.jpg'); /* Ganti dengan gambar Anda */
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 0;
+            color: #333;
+        }
+
+        #hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #388E3C;
+        }
+
+        /* About Section */
+        #about {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Services Section */
+        #services {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+
+        .service {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .service h3 {
+            color: #4CAF50;
+        }
+
+        /* Testimonials Section */
+        #testimonials {
+            padding: 50px 0;
+            background-color: #f0f0f0;
+        }
+
+        .testimonial {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+
+        #contact form {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        #contact label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        #contact button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact button:hover {
+            background-color: #388E3C;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Serenity Therapy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Beranda</a></li>
+                    <li><a href="#about">Tentang Saya</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Selamat Datang di Layanan Konseling Online Saya</h2>
+            <p>Temukan kedamaian dan solusi untuk masalah Anda bersama saya.</br>
+                Di sini, setiap cerita dihargai dan setiap perasaaan dipahami<br>
+                "Kesehatan mental adalah bagian penting dari kesejahteraan kita.
+                 Mari bersama-sama menjelajahi jalan menuju pemulihan dan pertumbuhan"</p>
+            <a href="#contact" class="cta-button">Buat Janji Sekarang</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <img src="psikolog.jpeg" alt="serena">
+            <h2>Tentang Saya</h2>
+            <p>Halo, saya Hani Ikhwani seorang psikolog yang berdedikasi untuk membantu Anda mencapai kesejahteraan mental dan emosional. Saya percaya bahwa setiap orang memiliki kekuatan untuk mengatasi tantangan hidup, dan saya di sini untuk memberikan dukungan, empati, dan panduan yang Anda butuhkan dalam perjalanan Anda. Dengan pendekatan yang personal dan berpusat pada klien, saya akan bekerja sama dengan Anda untuk memahami kebutuhan unik Anda dan mengembangkan strategi yang efektif untuk mencapai tujuan Anda.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="service">
+                <h3>Konseling Individu</h3>
+                <p>Sesi konseling pribadi untuk membantu Anda mengatasi masalah pribadi dan emosional.</p>
+            </div>
+            <div class="service">
+                <h3>Konseling Keluarga</h3>
+                <p>Membantu keluarga mengatasi konflik dan meningkatkan komunikasi.</p>
+            </div>
+            <div class="service">
+                <h3>Terapi Kelompok</h3>
+                <p>Sesi terapi dalam kelompok untuk berbagi pengalaman dan dukungan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>Testimoni</h2>
+            <div class="testimonial">
+                <p>"Konseling keluarga dengan Kak Hani membantu kami memperbaiki komunikasi dan menyelesaikan konflik. Sekarang, keluarga kami lebih harmonis dan bahagia."</p>
+                <p>- Itsar</p>
+            </div>
+            <div class="testimonial">
+                <p>"Konseling dengan Kak Hani benar-benar mengubah hidup saya. Saya merasa didengarkan dan dipahami, dan saya sekarang memiliki alat untuk mengatasi tantangan hidup dengan lebih baik."</p>
+                <p>- Dani</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Hubungi Saya</h2>
+            <form>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Psikolog Hani Ikhwani. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>

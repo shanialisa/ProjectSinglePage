@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Saya</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #F1EFEC;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #123458;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
+    .section {
+      min-height: 100vh;
+      padding: 100px 0;
+      display: flex;
+      align-items: center;
+    }
+    .section-title {
+      color: #030303;
+      margin-bottom: 40px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+    }
+    .img-rounded {
+      border-radius: 12px;
+    }
+    footer {
+      background-color: #123458;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    .form-control:focus {
+      border-color: #4E89AE;
+      box-shadow: none;
+    }
+    .progress {
+      height: 20px;
+      background-color: #e9ecef;
+    }
+    .testimonial-block {
+      background-color: #D4C9BE;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .testimonial-block img {
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+    .testimonial-block h5 {
+      font-size: 18px;
+      color: #030303;
+    }
+    .testimonial-block p {
+      font-style: italic;
+      color: #030303;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold" href="#">Portofolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon text-white"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Keahlian</a></li>
+        <li class=" nav-item"><a class="nav-link" href="#portfolio">Proyek</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Pengalaman</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimoni</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Pendidikan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero / Beranda -->
+<section class="hero section" id="hero">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Selamat Datang di Portofolio Saya</h1>
+    <p class="lead">Web Developer | Desainer | Freelancer</p>
+    <a href="#contact" class="btn btn-outline-light mt-3">Hubungi Saya</a>
+  </div>
+</section>
+
+<!-- Tentang -->
+<section id="about" class="section bg-white">
+  <div class="container">
+    <h2 class="section-title">Tentang Saya</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="shania11.jpeg" class="img-fluid rounded-circle" alt="Foto Profil">
+      </div>
+      <div class="col-md-8">
+        <p class="lead" style="text-align: justify;">Halo! Perkenalkan nama saya adalah Shania Natalisa seorang desainer web. 
+          Saya memiliki pengalaman dalam HTML, dan CSS.
+           Saya masih menempuh pendidikan sebagai Mahasiswa di Institut Teknologi Padang, dengan jurusan Teknik Informatika.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Keahlian -->
+<section id="skills" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Keahlian</h2>
+    <ul>
+      <li><strong>HTML:</strong>
+        <p> Mampu membuat struktur halaman web dengan menggunakan HTML dengan baik.</p></li>
+      <li><strong>CSS:</strong> 
+        <p>Menguasai styling halaman web untuk membuatnya responsif dan menarik. </p> </li>
+      <li><strong>JavaScript:</strong>
+        <p> Memahami dasar pemrograman JavaScript untuk interaktivitas di halaman web.</p></li>
+      <li><strong>Bootstrap:</strong> 
+        <p>Menggunakan Bootstrap untuk membuat tampilan web yang responsif dan mobile-friendly.</p></li>
+      <li><strong>UI/UX Design:</strong> 
+        <p>Berfokus pada pengalaman pengguna dengan antarmuka yang intuitif dan menarik.</p></li>
+      <li><strong>Design Prototyping:</strong>
+        <p> Mahir menggunakan Figma dan Adobe XD untuk wireframe, mockup, dan prototype interaktif.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Proyek -->
+<section id="portfolio" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Proyek</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-project h-100 text-center">
+          <img src="menu cafe1.png" alt="Project 1" class="img-fluid">
+          <div class="p-3">
+            <h5>Menu Café</h5>
+            <p>Website menu café sederhana dengan HTML & CSS.</p>
+            <a href="menu cafe html/index.html" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Lihat Proyek</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-project h-100 text-center">
+          <img src="web psikolog2.png" alt="Project 2" class="img-fluid">
+          <div class="p-3">
+            <h5>Web Psikolog</h5>
+            <p>One page web untuk layanan psikologi dengan desain profesional.</p>
+            <a href="one page psikolog/web.html" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Lihat Proyek</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-project h-100 text-center">
+          <img src="tinderdog3.png" alt="Project 3" class="img-fluid">
+          <div class="p-3">
+            <h5>TinderDog</h5>
+            <p>Latihan membuat tampilan modern seperti aplikasi Tindog.</p>
+            <a href="Project TinderDog/index.html" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Lihat Proyek</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pengalaman -->
+<section id="experience" class="section bg-light">
+  <div class="container">
+    <h2 class="section-title">Pengalaman</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><strong>Website Menu Café – Proyek Pribadi.</strong> </li>
+      <ul>
+        <li> Membuat halaman menu café sederhana dengan desain menarik dan responsif.</li>
+        <li> Menampilkan daftar menu,harga, dan gambar produk menggunakan HTML & CSS.</li>
+        <li> Dirancang terlebih dahulu di Figma untuk latihan UI layout dan penempatan elemen. </li>
+        </ul>
+        <p></p>
+      <li class="list-group-item"><strong>Website One Page Psikolog – Proyek Freelance Kecil.</strong></li>
+      <ul>
+      <li> Mendesain dan membangun website one page untuk layanan psikolog. </li>
+        <li> Menyediakan informasi layanan, jadwal konsultasi, dan form kontak.</li>
+          <li> Fokus pada tampilan profesional dan kemudahan akses di perangkat mobile. </li>
+            </ul>
+            <p></p>
+      <li class="list-group-item"><strong>Tindog Website – Proyek Latihan.</strong></li>
+      <ul>
+        <li>Mengerjakan ulang versi website “Tindog” sebagai latihan front-end.</li>
+          <li> Menggunakan HTML, CSS, dan Bootstrap untuk tampilan yang responsif.</li>
+            <li> Fokus pada struktur layout, desain modern, dan penggunaan ikon serta tombol interaktif.</li>
+            </ul>
+    </ul>
+  </div>
+</section>
+
+<!-- Testimoni -->
+<section id="testimonials" class="section bg-white">
+  <div class="container">
+    <h2 class="section-title">Testimoni</h2>
+    <div class="testimonial-block">
+      <div class="d-flex align-items-center">
+        <img src="user.jpeg" alt="Klien 1">
+        <div class="ms-3">
+          <h5><strong>Klien A</strong></h5>
+          <p>"Desain websitenya simpel tapi baguslah. Enak diajak komunikasi, dan revisi juga cepat banget!”</p>
+          <p>~@Agiss</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-block">
+      <div class="d-flex align-items-center">
+        <img src="user.jpeg" alt="Klien 2">
+        <div class="ms-3">
+          <h5><strong>Klien B</strong></h5>
+          <p>"Kerjanya cepat dan hasil desainnya keren! Nggak nyangka baru mulai, tapi udah bisa ngerti apa yang aku mau.”</p>
+          <p>~@lalalisa</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-block">
+    <div class="d-flex align-items-center">
+      <img src="user.jpeg" alt="Klien 2">
+      <div class="ms-3">
+        <h5><strong>Klien C</strong></h5>
+        <p>"Freelancer yang oke banget! Walau baru mulai, tapi profesional dan hasilnya sesuai ekspektasi”</p>
+        <p>~@Rosé </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Pendidikan -->
+<section id="blog" class="section bg-light">
+  <div class="container">
+   <h2 class="section-title">Pendidikan</h2>
+   <div class="row justify-content-center g-4">
+   <div class="col-md-4">
+   <div class="card h-100 shadow-sm border-0">
+  <div class="card-body text-center">
+  <h5 class="card-title fw-bold">S1 Teknik Informatika</h5>
+   <p class="card-text">Institut Teknologi Padang</p>
+  <p class="text-muted">2023 - Sekarang</p>
+  <small>Fokus pada perancangan web, algoritma, dan desain.</small>
+   </div>
+   </div>
+   </div>
+   <div class="col-md-4">
+   <div class="card h-100 shadow-sm border-0">
+  <div class="card-body text-center">
+   <h5 class="card-title fw-bold">SMA IPA</h5>
+   <p class="card-text">SMA Negeri 1 Junjung Sirih</p>
+   <p class="text-muted">2020 - 2023</p>
+   </div>
+  </div>
+ </div>
+  <div class="col-md-4">
+ <div class="card h-100 shadow-sm border-0">
+   <div class="card-body text-center">
+  <h5 class="card-title fw-bold">SMP</h5>
+   <p class="card-text">SMP Negeri 1 Junjung Sirih</p>
+ <p class="text-muted">2017 - 2020</p>
+   </div>
+  </div>
+  </div>
+   </div>
+   </div>
+  </section>
+
+  
+<!-- Kontak -->
+<section id="contact" class="section bg-white">
+  <div class="container">
+    <h2 class="section-title">Kontak Saya</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <form id="contactForm" action="https://formspree.io/f/xvgkekqk" method="POST">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nama Anda" required>
+            <label for="name">Nama Anda</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Anda" required>
+            <label for="email">Email Anda</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" id="message" name="message" placeholder="Pesan Anda" style="height: 150px" required></textarea>
+            <label for="message">Pesan</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+          <div id="formSuccess" class="mt-3 text-success d-none">Terima kasih! Pesan Anda telah terkirim.</div>
+        </form>
+      </div>
+
+      <div class="col-md-6">
+        <h5>Info Kontak</h5>
+        <p><i class="fas fa-envelope me-2"></i>shania@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt me-2"></i>Padang, Indonesia</p>
+        <p><i class="fas fa-phone me-2"></i>+62 812 3456 7890</p>
+        <div class="mt-3">
+          <a href="#" class="me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a href="#" class="me-3"><i class="fab fa-github fa-lg"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Shania. Portofolio.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const contactForm = document.getElementById("contactForm");
+  const formSuccess = document.getElementById("formSuccess");
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    formSuccess.classList.remove("d-none");
+    contactForm.reset();
+  });
+</script>
+</body>
+</html>
+
+

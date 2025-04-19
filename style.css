@@ -1,0 +1,48 @@
+/* Untuk gambar profil */
+.img-fluid {
+    max-width: 300px;  /* Maksimum lebar 300px */
+    height: auto;      /* Menjaga aspek rasio */
+    border-radius: 50%; /* Membuat gambar bulat */
+  }
+  
+  /* Untuk gambar proyek */
+  .img-rounded {
+    width: 100%;  /* Lebar penuh dalam kolom */
+    max-width: 100%; /* Membatasi lebar gambar sesuai container */
+    height: auto;  /* Menjaga aspek rasio */
+    border-radius: 12px; /* Sudut gambar dibulatkan */
+  }
+
+  .card-project {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-project:hover {
+    transform: translateY(-8px);
+  }
+  
+  .card-project img {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-project h5 {
+    font-weight: 600;
+    color: #123458;
+    margin-top: 15px;
+  }
+  
+  .card-project p {
+    color: #444;
+    font-size: 15px;
+  }
+
+
+ 
+
